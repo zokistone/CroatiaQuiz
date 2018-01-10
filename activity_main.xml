@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.croatiaquiz.MainActivity">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#DC143C"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            style="@style/questionnumbers"
+            android:text="Info "
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Answer this five questions and find out how much You know about Croatia."
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionnumbers"
+            android:background="#DC143C"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:text="Question 1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Which city is capital of Croatia?"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Split"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#757575"/>
+
+            <RadioButton
+                android:id="@+id/Zagreb_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Zagreb"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#757575"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Dubrovnik"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#757575"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Osijek"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#757575"/>
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionnumbers"
+            android:background="#DC143C"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:text="Question 2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Karlovac lays on"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/numberOfRiversKarlovac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="2,3,4"
+                android:padding="8dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="rivers."
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionnumbers"
+            android:background="#DC143C"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:text="Question 3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="Who of those people was president of Croatia? (2 answers)"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <CheckBox
+            android:id="@+id/Stipe_Mesic_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingLeft="24dp"
+            android:text="Stipe Mesic"
+            android:textSize="16sp"
+            android:textColor="#757575"/>
+
+        <CheckBox
+            android:id="@+id/Franjo_Tudman_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingLeft="24dp"
+            android:text="Franjo Tudman"
+            android:textSize="16sp"
+            android:textColor="#757575"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingLeft="24dp"
+            android:text="Davor Suker"
+            android:textSize="16sp"
+            android:textColor="#757575"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingLeft="24dp"
+            android:text="Luka Modric"
+            android:textSize="16sp"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionnumbers"
+            android:background="#DC143C"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:text="Question 4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="What is the name of the river which crosses Zagreb?"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/nameOfTheRiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="The"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/Sava_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="name (write in caps)"
+                android:padding="8dp"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/questionnumbers"
+            android:background="#DC143C"
+            android:textAllCaps="true"
+            android:paddingLeft="10dp"
+            android:text="Question 5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="On which continent is Croatia located?"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Asia"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#757575" />
+
+            <RadioButton
+                android:id="@+id/Europe_RadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Europe"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textSize="16sp"
+                android:textColor="#757575"/>
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/button_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:onClick="submitQuiz"
+            android:padding="8dp"
+            android:text="Check answers"
+            android:textAllCaps="true" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/totalAnswers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="16dp"
+                android:text=""
+                android:textAllCaps="true"
+                android:textColor="#0094cc"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/Tour_Eiffel_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:layout_below="@+id/totalAnswers"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/flag" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
