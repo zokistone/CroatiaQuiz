@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CroatiaQuiz</string>
+
+    <string name="info">Answer this five questions and find out how much You know about Croatia.</string>
+
+    <string name="question1">Which city is capital of Croatia?</string>
+    <string name="question3">Who of those people was president of Croatia? (2 answers)</string>
+    <string name="question4">What is the name of the river which crosses Zagreb?</string>
+    <string name="question5">On which continent is Croatia located?</string>
+</resources>
