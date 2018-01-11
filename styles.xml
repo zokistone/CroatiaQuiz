@@ -1,0 +1,33 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--App branding color for the app bar-->
+
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#40C4FF</item>
+        <!--Darker variant for the statut bar and contextual app bar-->
+        <item name="colorPrimaryDark">#424242</item>
+        <!--Darker variant for the statut bar and contextual app bar-->
+        <item name="colorAccent">#536DFE</item>
+        <!--   theme UI controls like checkboxes and text fields -->
+        <item name="android:colorAccent">#82f7ff</item>
+
+    </style>
+
+    <style name="questionnumbers">
+        <item name="android:textColor">#0000FF</item>
+        <item name="android:textSize">24dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:background">#DC143C</item>
+    </style>
+
+    <style name="alltext">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#757575</item>
+    </style>
+
+</resources>
