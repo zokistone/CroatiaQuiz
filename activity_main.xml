@@ -14,11 +14,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#DC143C"
-            android:textAllCaps="true"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/paddingleft"
             style="@style/questionnumbers"
-            android:text="Info "
+            android:text="Info"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -27,17 +25,15 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Answer this five questions and find out how much You know about Croatia."
-            android:textSize="16sp" />
+            style="@style/alltext"
+            android:padding="@dimen/paddingquestion"
+            android:text="@string/info" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/questionnumbers"
-            android:background="#DC143C"
-            android:textAllCaps="true"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/paddingleft"
             android:text="Question 1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -47,9 +43,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Which city is capital of Croatia?"
-            android:textSize="16sp"
+            android:padding="@dimen/paddingquestion"
+            android:text="@string/question1"
+            style="@style/alltext"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -65,26 +61,24 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Split"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textSize="16sp"
-                android:textColor="#757575"/>
+                style="@style/alltext"/>
 
             <RadioButton
                 android:id="@+id/Zagreb_RadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Zagreb"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textSize="16sp"
-                android:textColor="#757575"/>
+                style="@style/alltext"/>
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Dubrovnik"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textSize="16sp"
@@ -93,11 +87,10 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Osijek"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textSize="16sp"
-                android:textColor="#757575"/>
+                style="@style/alltext"/>
         </RadioGroup>
 
 
@@ -105,9 +98,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/questionnumbers"
-            android:background="#DC143C"
-            android:textAllCaps="true"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/paddingleft"
             android:text="Question 2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -122,24 +113,24 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Karlovac lays on"
-                android:textSize="16sp" />
+                style="@style/alltext" />
 
             <EditText
                 android:id="@+id/numberOfRiversKarlovac"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="2,3,4"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="rivers."
-                android:textSize="16sp" />
+                style="@style/alltext" />
 
         </LinearLayout>
 
@@ -148,9 +139,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/questionnumbers"
-            android:background="#DC143C"
-            android:textAllCaps="true"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/paddingleft"
             android:text="Question 3"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -160,9 +149,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="Who of those people was president of Croatia? (2 answers)"
-            android:textSize="16sp"
+            android:padding="@dimen/paddingquestion"
+            android:text="@string/question3"
+            style="@style/alltext"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent" />
@@ -171,47 +160,41 @@
             android:id="@+id/Stipe_Mesic_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:padding="@dimen/paddingquestion"
             android:paddingLeft="24dp"
             android:text="Stipe Mesic"
-            android:textSize="16sp"
-            android:textColor="#757575"/>
+            style="@style/alltext"/>
 
         <CheckBox
             android:id="@+id/Franjo_Tudman_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:padding="@dimen/paddingquestion"
             android:paddingLeft="24dp"
             android:text="Franjo Tudman"
-            android:textSize="16sp"
-            android:textColor="#757575"/>
+            style="@style/alltext"/>
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:padding="@dimen/paddingquestion"
             android:paddingLeft="24dp"
             android:text="Davor Suker"
-            android:textSize="16sp"
-            android:textColor="#757575"/>
+            style="@style/alltext"/>
 
         <CheckBox
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="8dp"
+            android:padding="@dimen/paddingquestion"
             android:paddingLeft="24dp"
             android:text="Luka Modric"
-            android:textSize="16sp"
-            android:textColor="#757575"/>
+            style="@style/alltext"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/questionnumbers"
-            android:background="#DC143C"
-            android:textAllCaps="true"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/paddingleft"
             android:text="Question 4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -221,9 +204,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="What is the name of the river which crosses Zagreb?"
-            android:textSize="16sp"
+            android:padding="@dimen/paddingquestion"
+            android:text="@string/question4"
+            style="@style/alltext"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -238,7 +221,7 @@
                 android:id="@+id/nameOfTheRiver"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="The"
                 android:textSize="16sp" />
 
@@ -247,7 +230,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="name (write in caps)"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:textSize="16sp" />
         </LinearLayout>
 
@@ -255,9 +238,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/questionnumbers"
-            android:background="#DC143C"
-            android:textAllCaps="true"
-            android:paddingLeft="10dp"
+            android:paddingLeft="@dimen/paddingleft"
             android:text="Question 5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -267,9 +248,9 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="8dp"
-            android:text="On which continent is Croatia located?"
-            android:textSize="16sp" />
+            android:padding="@dimen/paddingquestion"
+            android:text="@string/question5"
+            style="@style/alltext" />
 
         <RadioGroup
             android:layout_width="match_parent"
@@ -279,21 +260,19 @@
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Asia"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textSize="16sp"
-                android:textColor="#757575" />
+                style="@style/alltext" />
 
             <RadioButton
                 android:id="@+id/Europe_RadioButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="8dp"
+                android:padding="@dimen/paddingquestion"
                 android:text="Europe"
                 android:textAppearance="?android:textAppearanceMedium"
-                android:textSize="16sp"
-                android:textColor="#757575"/>
+                style="@style/alltext"/>
 
         </RadioGroup>
 
@@ -325,7 +304,7 @@
                 android:textSize="16dp" />
 
             <ImageView
-                android:id="@+id/Tour_Eiffel_image_view"
+                android:id="@+id/Flag_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="20dp"
